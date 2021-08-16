@@ -4,9 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AESTEXT"
-        Icon="lock2.ico"
+        Icon="lock.ico"
         mc:Ignorable="d"
-        Title="Encrypted Messages" Height="565" Width="500">
+        Title="Secure Messages" Height="565" Width="500">
     <Grid>
         <Label Content="Message:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="20"/>
         <TextBox x:Name="txt_unv" HorizontalAlignment="Left" Height="100" Margin="10,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="318"/>
