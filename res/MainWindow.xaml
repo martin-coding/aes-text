@@ -1,0 +1,23 @@
+﻿<Window x:Class="AESTEXT.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AESTEXT"
+        Icon="lock2.ico"
+        mc:Ignorable="d"
+        Title="Encrypted Messages" Height="565" Width="500">
+    <Grid>
+        <Label Content="Message:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="txt_unv" HorizontalAlignment="Left" Height="100" Margin="10,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="318"/>
+        <Button Content="Encrypt" HorizontalAlignment="Left" Margin="372,52,0,0" VerticalAlignment="Top" Width="100" Height="100" FontSize="14" Click="Encrypt"/>
+        <Label Content="Encrypted message:" HorizontalAlignment="Left" Margin="10,157,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="txt_ver" HorizontalAlignment="Left" Height="100" Margin="10,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="318"/>
+        <Button Content="Decrypt" HorizontalAlignment="Left" Margin="372,199,0,0" VerticalAlignment="Top" Width="100" Height="100" FontSize="14" Click="Decrypt"/>
+        <Label Content="Password:" HorizontalAlignment="Left" Margin="10,312,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <PasswordBox x:Name="pw_box" HorizontalAlignment="Left" Margin="10,354,0,0" VerticalAlignment="Top" Width="462" Height="35" FontSize="15"/>
+        <Label Content="Initialization vector:" HorizontalAlignment="Left" Margin="10,394,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <PasswordBox x:Name="iv_box" HorizontalAlignment="Left" Margin="10,436,0,0" VerticalAlignment="Top" Width="462" Height="35" FontSize="15"/>
+        <Button Content="Clear all" HorizontalAlignment="Left" Margin="10,489,0,10" Width="462" FontSize="14" Click="Clear"/>
+    </Grid>
+</Window>
